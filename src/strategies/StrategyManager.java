@@ -1,9 +1,6 @@
 package strategies;
 
-import strategies.exact.BABPathStrategy;
-import strategies.exact.DfsStrategy;
-import strategies.exact.DfsWithPrecedenceStrategy;
-import strategies.exact.DfsWithPrecedenceWithMaxStrategy;
+import strategies.exact.*;
 import strategies.heuristics.basic.DefaultPathStrategy;
 
 public class StrategyManager {
@@ -20,6 +17,7 @@ public class StrategyManager {
 		case DFS_WITH_PRECEDENCE:return new DfsWithPrecedenceStrategy().create();
 		case DFS_WITH_PRECEDENCE_WITH_MAX:return new DfsWithPrecedenceWithMaxStrategy().create();
 		case BAB:return new BABPathStrategy().create();
+        case DPS:return new DPStrategy().create();
 		default: return null;
 		}
 	}

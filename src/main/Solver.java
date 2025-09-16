@@ -26,7 +26,7 @@ public class Solver {
 	}
 
 	private void searchSoluce() {
-		soluceToDisplay = StrategyManager.createSolucePath(SoluceType.BAB);
+		soluceToDisplay = StrategyManager.createSolucePath(SoluceType.DPS);
 	}
 
 	private void prepare() {
