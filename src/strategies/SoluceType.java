@@ -1,0 +1,7 @@
+package strategies;
+
+public enum SoluceType {
+	
+	DEFAULT, NN, BEST_NN, DFS, BAB, DPS, GENETIC, ANT, DFS_MINMAX, RANDOM, XRANDOM, DFS_WITH_PRECEDENCE, DFS_WITH_PRECEDENCE_WITH_MAX;
+
+}
